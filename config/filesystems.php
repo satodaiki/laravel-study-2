@@ -65,6 +65,26 @@ return [
             'endpoint' => env('AWS_ENDPOINT'),
         ],
 
+        'logs' => [
+            'driver' => 'local',
+            'root' => storage_path('logs'),
+            'url' => env('APP_URL').'/storage/logs',
+        ],
+
+        'mac' => [
+            'driver' => 'local',
+            'root' => '/Users/satodai/Documents/Projects/temp/laravel-study-2/app',
+        ],
+
+        // FTPサーバーの設定
+        // 標準でドライバーあり
+        // 'ftp' => [
+        //     'driver' => 'ftp',
+        //     'host' => '',
+        //     'username' => '',
+        //     'password' => '',
+        // ],
+
     ],
 
     /*
